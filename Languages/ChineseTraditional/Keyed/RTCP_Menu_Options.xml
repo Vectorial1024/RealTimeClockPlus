@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <RTCP_DisplayFormatChoice_title>實時時鐘顯示格式</RTCP_DisplayFormatChoice_title>
+  <RTCP_DisplayFormatChoice_descr>在此選擇應如何顯示在介面中的實際時間。即時生效。</RTCP_DisplayFormatChoice_descr>
+</LanguageData>

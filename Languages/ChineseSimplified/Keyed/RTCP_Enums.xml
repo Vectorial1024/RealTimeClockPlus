@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <StandardDisplayFormat_SIMPLE_24HR>简便24小时 (游戏预设) (时时:分分)</StandardDisplayFormat_SIMPLE_24HR>
+  <StandardDisplayFormat_SIMPLE_12HR>简便12小时 (时时:分分)</StandardDisplayFormat_SIMPLE_12HR>
+  <StandardDisplayFormat_FULL_24HR>完整24小时 (时时:分分:秒秒)</StandardDisplayFormat_FULL_24HR>
+  <StandardDisplayFormat_FULL_12HR>完整12小时 (时时:分分:秒秒)</StandardDisplayFormat_FULL_12HR>
+</LanguageData>

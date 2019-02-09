@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <StandardDisplayFormat_SIMPLE_24HR>Simple 24-Hr (Vanilla) (HH:MM)</StandardDisplayFormat_SIMPLE_24HR>
+  <StandardDisplayFormat_SIMPLE_12HR>Simple 12-Hr (HH:MM)</StandardDisplayFormat_SIMPLE_12HR>
+  <StandardDisplayFormat_FULL_24HR>Full 24-Hr (HH:MM:SS)</StandardDisplayFormat_FULL_24HR>
+  <StandardDisplayFormat_FULL_12HR>Full 12-Hr (HH:MM:SS)</StandardDisplayFormat_FULL_12HR>
+</LanguageData>

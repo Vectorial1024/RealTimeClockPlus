@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <RTCP_DisplayFormatChoice_title>Real-time clock display format</RTCP_DisplayFormatChoice_title>
+  <RTCP_DisplayFormatChoice_descr>Choose how the real-time clock in the UI should be displayed. Settings are effective immediately.</RTCP_DisplayFormatChoice_descr>
+</LanguageData>

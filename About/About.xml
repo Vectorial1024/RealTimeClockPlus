@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Real Time Clock Plus (v1.0.0)</name>
+	<author>Vectorial1024</author>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>0.19</li>
+		<li>0.18</li>
+	</supportedVersions>
+	<description>Additional display options for your real-time clock.</description>
+</ModMetaData>
