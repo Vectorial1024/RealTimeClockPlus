@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-  <StandardDisplayFormat_SIMPLE_24HR>Simple 24-Hr (Vanilla) (HH:MM)</StandardDisplayFormat_SIMPLE_24HR>
-  <StandardDisplayFormat_SIMPLE_12HR>Simple 12-Hr (HH:MM)</StandardDisplayFormat_SIMPLE_12HR>
-  <StandardDisplayFormat_FULL_24HR>Full 24-Hr (HH:MM:SS)</StandardDisplayFormat_FULL_24HR>
-  <StandardDisplayFormat_FULL_12HR>Full 12-Hr (HH:MM:SS)</StandardDisplayFormat_FULL_12HR>
+  <ClockReadoutFormat_SIMPLE_24HR>Simple 24-Hr (Vanilla) (HH:MM)</ClockReadoutFormat_SIMPLE_24HR>
+  <ClockReadoutFormat_SIMPLE_12HR>Simple 12-Hr (HH:MM)</ClockReadoutFormat_SIMPLE_12HR>
+  <ClockReadoutFormat_FULL_24HR>Full 24-Hr (HH:MM:SS)</ClockReadoutFormat_FULL_24HR>
+  <ClockReadoutFormat_FULL_12HR>Full 12-Hr (HH:MM:SS)</ClockReadoutFormat_FULL_12HR>
+
+  <TimerDisplayLocation_NOTIFICATION>Notification area</TimerDisplayLocation_NOTIFICATION>
+  <TimerDisplayLocation_REALTIMECLOCK>Real time clock</TimerDisplayLocation_REALTIMECLOCK>
 </LanguageData>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <SPTT_TrackerAlert_descr>SPT stands for Session Play Time.
+
+A session begins when you start a new game or load a save, and ends when you Quit to OS or Quit to Main Menu.
+
+This timer tells you how much time you have spent in this session.
+
+You may want to avoid playing long sessions of RimWorld.</SPTT_TrackerAlert_descr>
+</LanguageData>

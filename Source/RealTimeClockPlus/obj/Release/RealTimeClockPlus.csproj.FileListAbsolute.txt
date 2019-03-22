@@ -1,6 +1,4 @@
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RealTimeClockPlus\Assemblies\RealTimeClockPlus.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RealTimeClockPlus\Assemblies\RealTimeClockPlus.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RealTimeClockPlus\Source\RealTimeClockPlus\obj\Release\RealTimeClockPlus.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RealTimeClockPlus\Source\RealTimeClockPlus\obj\Release\RealTimeClockPlus.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RealTimeClockPlus\Source\RealTimeClockPlus\obj\Release\RealTimeClockPlus.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RealTimeClockPlus\Source\RealTimeClockPlus\obj\Release\RealTimeClockPlus.pdb
