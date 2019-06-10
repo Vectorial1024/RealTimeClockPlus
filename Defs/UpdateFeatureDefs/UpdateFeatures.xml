@@ -19,6 +19,12 @@
 		<assemblyVersion>2.0.1</assemblyVersion>
 		<content>Added new SPTT display location: "Hidden". You may now disable the Play Time Tracker component by setting its display location to "Hidden" in the Mod Options menu.</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>RTCP_v3_0_0</defName>
+		<assemblyVersion>3.0.0</assemblyVersion>
+		<content>The SPTT now excludes time periods where RimWorld is minimized or your computer is sleeping, etc.</content>
+	</HugsLib.UpdateFeatureDef>
 	
     <!--
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
