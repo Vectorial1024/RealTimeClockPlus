@@ -5,6 +5,7 @@
   <ClockReadoutFormat_FULL_24HR>完整24小時 (時時:分分:秒秒)</ClockReadoutFormat_FULL_24HR>
   <ClockReadoutFormat_FULL_12HR>完整12小時 (時時:分分:秒秒)</ClockReadoutFormat_FULL_12HR>
 
+  <TimerDisplayLocation_HIDDEN>隱藏 (遊戲預設)</TimerDisplayLocation_HIDDEN>
   <TimerDisplayLocation_NOTIFICATION>通知區域</TimerDisplayLocation_NOTIFICATION>
   <TimerDisplayLocation_REALTIMECLOCK>實時時鐘</TimerDisplayLocation_REALTIMECLOCK>
 </LanguageData>

@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="PlayTimeTracker\Alert_SessionPlayTimeTracker.cs" />
     <Compile Include="PlayTimeTracker\PostFix_LoadedPreviousGame.cs" />
+    <Compile Include="PlayTimeTracker\PostFix_RealTime_Update.cs" />
     <Compile Include="PlayTimeTracker\PostFix_StartedNewGame.cs" />
     <Compile Include="PlayTimeTracker\RimWorldSPTT.cs" />
     <Compile Include="PlayTimeTracker\TimerDisplayLocationEnum.cs" />

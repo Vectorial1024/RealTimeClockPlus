@@ -7,7 +7,8 @@ namespace RealTimeClockPlus.PlayTimeTracker
 {
     public enum TimerDisplayLocationEnum
     {
-        NOTIFICATION = 0,
+        HIDDEN = 0,
+        NOTIFICATION,
         REALTIMECLOCK
     }
 }

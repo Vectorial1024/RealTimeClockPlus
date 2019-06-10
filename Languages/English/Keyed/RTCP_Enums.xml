@@ -5,6 +5,7 @@
   <ClockReadoutFormat_FULL_24HR>Full 24-Hr (HH:MM:SS)</ClockReadoutFormat_FULL_24HR>
   <ClockReadoutFormat_FULL_12HR>Full 12-Hr (HH:MM:SS)</ClockReadoutFormat_FULL_12HR>
 
+  <TimerDisplayLocation_HIDDEN>Hidden (Vanilla)</TimerDisplayLocation_HIDDEN>
   <TimerDisplayLocation_NOTIFICATION>Notification area</TimerDisplayLocation_NOTIFICATION>
   <TimerDisplayLocation_REALTIMECLOCK>Real time clock</TimerDisplayLocation_REALTIMECLOCK>
 </LanguageData>

@@ -31,7 +31,7 @@ namespace RealTimeClockPlus.RealTimeReadout
                 result += RealTimeClockPlusMain.SessionPlayTimeTracker.ToString();
                 result += ")";
             }
-            Log.Error("Result is: " + result);
+            // Log.Error("Result is: " + result);
             return result;
         }
     }

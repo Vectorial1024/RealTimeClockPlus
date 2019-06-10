@@ -3,6 +3,7 @@ using HugsLib.Settings;
 using RealTimeClockPlus.PlayTimeTracker;
 using RealTimeClockPlus.RealTimeReadout;
 using System;
+using UnityEngine;
 using Verse;
 
 namespace RealTimeClockPlus
@@ -55,7 +56,7 @@ namespace RealTimeClockPlus
 
         public static void BeginOrResetTimer()
         {
-            SessionPlayTimeTracker = new RimWorldSPTT(DateTime.Now);
+            SessionPlayTimeTracker = new RimWorldSPTT();
         }
         
         /// <summary>
@@ -66,6 +67,11 @@ namespace RealTimeClockPlus
             SettingHandle_ClockDisplayFormat = Settings.GetHandle("enumClockDisplayFormat", "RTCP_DisplayFormatChoice_title".Translate(), "RTCP_DisplayFormatChoice_descr".Translate(), ClockReadoutFormatEnum.SIMPLE_24HR, null, "ClockReadoutFormat_");
             SettingHandle_TimerDisplayLocation = Settings.GetHandle("enumTimerDisplayLocation", "SPTT_DisplayLocation_title".Translate(), "SPTT_DisplayLocation_desc".Translate(), TimerDisplayLocationEnum.NOTIFICATION, null, "TimerDisplayLocation_");
             SettingHandle_TimerUseColorGradient = Settings.GetHandle("flagTimerUseColorGradient", "SPTT_UseColorGradient_title".Translate(), "SPTT_UseColorGradient_desc".Translate(), true);
+        }
+
+        public static void AccumulateTime(float amount)
+        {
+            SessionPlayTimeTracker?.AccumulateTime(amount);
         }
     }
 }

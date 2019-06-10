@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 using Verse;
 
 namespace RealTimeClockPlus.PlayTimeTracker
@@ -9,27 +10,21 @@ namespace RealTimeClockPlus.PlayTimeTracker
     /// <summary>
     /// RimWorld Session Play Time Tracker, abbreviated as RimWorld SPTT
     /// </summary>
-    public struct RimWorldSPTT
+    public class RimWorldSPTT
     {
         /// <summary>
-        /// The DateTime that this counter is initialized
+        /// Lambda expression. Calculates and returns the cumulative time elapsed.
         /// </summary>
-        public DateTime CommencementTime { get; private set; }
+        public TimeSpan ElapsedTime => TimeSpan.FromSeconds(accumulation);
 
         /// <summary>
-        /// Lambda expression. Calculates and returns the time elapsed since CommencementTime.
+        /// Internal variable to store how much time has passed since whatever moment we start counting.
         /// </summary>
-        public TimeSpan ElapsedTime => DateTime.Now - CommencementTime;
+        private float accumulation = 0;
 
-        /// <summary>
-        /// Instantiates a SPPT with the given DateTime as the Commencement Time.
-        /// <para/>
-        /// The parameter is required since explicit parameterless constructors of struct is forbidden.
-        /// </summary>
-        /// <param name="commencement"></param>
-        public RimWorldSPTT(DateTime commencement)
+        public RimWorldSPTT()
         {
-            CommencementTime = commencement;
+            accumulation = 0;
         }
 
         /// <summary>
@@ -86,6 +81,15 @@ namespace RealTimeClockPlus.PlayTimeTracker
             builder.Append(millisecondsTenths.ToStringCached());
             // Everything is done.
             return builder.ToString();
+        }
+
+        /// <summary>
+        /// Instructs this counter to accumulate such amount of time.
+        /// </summary>
+        /// <param name="amount"></param>
+        public void AccumulateTime(float amount)
+        {
+            accumulation += amount;
         }
     }
 }

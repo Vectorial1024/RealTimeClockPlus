@@ -13,6 +13,12 @@
 		<assemblyVersion>2.0.0</assemblyVersion>
 		<content>Play Time Tracker has been merged into this mod. Additional options from Play Time Tracker are now available in the Mod Options menu.</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>RTCP_v2_0_1</defName>
+		<assemblyVersion>2.0.1</assemblyVersion>
+		<content>Added new SPTT display location: "Hidden". You may now disable the Play Time Tracker component by setting its display location to "Hidden" in the Mod Options menu.</content>
+	</HugsLib.UpdateFeatureDef>
 	
     <!--
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
