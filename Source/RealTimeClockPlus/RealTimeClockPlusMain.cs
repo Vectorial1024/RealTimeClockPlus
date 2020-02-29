@@ -12,14 +12,9 @@ namespace RealTimeClockPlus
     {
         // Configs and stuff
 
-        public static string MODID => "com.vectorial1024.rimworld.rtcp";
+        public static string MODSHORTID => "V1024-RTCP";
 
-        /// <summary>
-        /// Already includes a space character.
-        /// </summary>
-        public static string MODPREFIX => "[V1024-RTCP] ";
-
-        public override string ModIdentifier => MODID;
+        public override string LogIdentifier => MODSHORTID;
 
         // Static objects
 

@@ -1,11 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Real Time Clock Plus (v3.0.0)</name>
+	<packageId>V1024.RealTimeClockPlus</packageId>
+	<name>Real Time Clock Plus (v4.0.0)</name>
 	<author>Vectorial1024</author>
 	<supportedVersions>
+		<li>1.1</li>
 		<li>1.0</li>
 		<li>0.19</li>
 		<li>0.18</li>
 	</supportedVersions>
 	<description>Additional display options for your real-time clock.</description>
+	<modDependencies> 
+		<li>
+			<packageId>UnlimitedHugs.HugsLib</packageId>
+			<displayName>HugsLib</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=818773962</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>UnlimitedHugs.HugsLib</li>
+	</loadAfter>
 </ModMetaData>

@@ -18,6 +18,7 @@ namespace RealTimeClockPlus.PlayTimeTracker
         private const float PulseFreq = 0.5f;
         private const float PulseAmpCritical = 0.6f;
         private readonly TimeSpan maxTimeForGradient = new TimeSpan(5, 0, 0);
+        private TaggedString explanation = new TaggedString("SPTT_TrackerAlert_descr".Translate());
 
         public Alert_SessionPlayTimeTracker()
         {
@@ -29,9 +30,9 @@ namespace RealTimeClockPlus.PlayTimeTracker
             return "SPT T+ " + RealTimeClockPlusMain.SessionPlayTimeTracker.ToString();
         }
 
-        public override string GetExplanation()
+        public override TaggedString GetExplanation()
         {
-            return "SPTT_TrackerAlert_descr".Translate();
+            return explanation;
         }
 
         public override AlertReport GetReport()
