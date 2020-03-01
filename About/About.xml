@@ -10,6 +10,7 @@
 		<li>0.18</li>
 	</supportedVersions>
 	<description>Additional display options for your real-time clock.</description>
+	<url>https://github.com/Vectorial1024/RealTimeClockPlus</url>
 	<modDependencies> 
 		<li>
 			<packageId>UnlimitedHugs.HugsLib</packageId>
