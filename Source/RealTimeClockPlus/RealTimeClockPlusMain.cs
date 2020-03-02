@@ -18,7 +18,23 @@ namespace RealTimeClockPlus
 
         // Static objects
 
-        public static RimWorldSPTT SessionPlayTimeTracker { get; private set; }
+        private static RimWorldSPTT spttObject;
+
+        public static RimWorldSPTT SessionPlayTimeTracker 
+        {
+            get
+            {
+                if (spttObject == null)
+                {
+                    spttObject = new RimWorldSPTT();
+                }
+                return spttObject;
+            }
+            private set
+            {
+                spttObject = value;
+            }
+        }
 
         // Settings
 

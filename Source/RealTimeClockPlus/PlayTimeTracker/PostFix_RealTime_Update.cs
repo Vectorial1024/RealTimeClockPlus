@@ -12,8 +12,6 @@ namespace RealTimeClockPlus.PlayTimeTracker
     [HarmonyPatch("Update", MethodType.Normal)]
     public class PostFix_RealTime_Update
     {
-        private static float prevTime = 0;
-        private static float currTime = 0;
         private static bool ignoreNext = false;
 
         [HarmonyPostfix]
