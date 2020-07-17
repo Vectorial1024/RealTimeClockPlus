@@ -31,6 +31,12 @@
 		<assemblyVersion>4.0.1</assemblyVersion>
 		<content>Fixed potential NullReferenceException cases.</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">
+		<defName>RTCP_v4_0_2</defName>
+		<assemblyVersion>4.0.2</assemblyVersion>
+		<content>Added option to hide the millisecond part of the Session Play Time Tracker (SPTT).</content>
+	</HugsLib.UpdateFeatureDef>
 	
     <!--
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">

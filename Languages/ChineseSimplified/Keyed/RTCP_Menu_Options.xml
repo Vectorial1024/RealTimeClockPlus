@@ -7,4 +7,6 @@
   <SPTT_DisplayLocation_desc>选择「时域游戏时数计时器」应在哪里出现。即时生效。\n\n备注：若您选择了「实时时钟」，但并没有在游戏中启用实时时钟，本计时器是不会出现的。</SPTT_DisplayLocation_desc>
   <SPTT_UseColorGradient_title>SPTT使用渐变颜色</SPTT_UseColorGradient_title>
   <SPTT_UseColorGradient_desc>表明「时域游戏时数计时器」应否使用渐变背景颜色。即时生效。\n\n备注：本计时器的渐变背景颜色随时间而变化，以标示时间流逝。不适用于「实时时钟」显示模式。</SPTT_UseColorGradient_desc>
+  <SPTT_UseMillisecondPart_title>SPTT显示毫秒部分</SPTT_UseMillisecondPart_title>
+  <SPTT_UseMillisecondPart_desc>表明「時域遊戲時數計時器」應否顯示其毫秒部分。即時生效。</SPTT_UseMillisecondPart_desc>
 </LanguageData>

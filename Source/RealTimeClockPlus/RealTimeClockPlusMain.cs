@@ -44,6 +44,8 @@ namespace RealTimeClockPlus
 
         public static SettingHandle<bool> SettingHandle_TimerUseColorGradient { get; private set; }
 
+        public static SettingHandle<bool> SettingHandle_TimerUsesMillisecondPart { get; private set; }
+
         // Quick-access flags
 
         public static bool TimerIsDisplayedAtClock => SettingHandle_TimerDisplayLocation.Value == TimerDisplayLocationEnum.REALTIMECLOCK;
@@ -51,6 +53,8 @@ namespace RealTimeClockPlus
         public static bool TimerIsDisplayedAsAlert => SettingHandle_TimerDisplayLocation.Value == TimerDisplayLocationEnum.NOTIFICATION;
 
         public static bool TimerAlertShouldUseColorGradient => SettingHandle_TimerUseColorGradient.Value;
+
+        public static bool TimerShouldIncludeMilliseconds => SettingHandle_TimerUsesMillisecondPart.Value;
 
         public static bool PlayTimeTrackerIsLoaded { get; internal set; } = false;
 
@@ -78,6 +82,7 @@ namespace RealTimeClockPlus
             SettingHandle_ClockDisplayFormat = Settings.GetHandle("enumClockDisplayFormat", "RTCP_DisplayFormatChoice_title".Translate(), "RTCP_DisplayFormatChoice_descr".Translate(), ClockReadoutFormatEnum.SIMPLE_24HR, null, "ClockReadoutFormat_");
             SettingHandle_TimerDisplayLocation = Settings.GetHandle("enumTimerDisplayLocation", "SPTT_DisplayLocation_title".Translate(), "SPTT_DisplayLocation_desc".Translate(), TimerDisplayLocationEnum.NOTIFICATION, null, "TimerDisplayLocation_");
             SettingHandle_TimerUseColorGradient = Settings.GetHandle("flagTimerUseColorGradient", "SPTT_UseColorGradient_title".Translate(), "SPTT_UseColorGradient_desc".Translate(), true);
+            SettingHandle_TimerUsesMillisecondPart = Settings.GetHandle("flagTimerUseMilliseconds", "SPTT_UseMillisecondPart_title".Translate(), "SPTT_UseMillisecondPart_desc".Translate(), true);
         }
 
         public static void AccumulateTime(float amount)

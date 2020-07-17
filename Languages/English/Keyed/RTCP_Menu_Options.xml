@@ -7,4 +7,6 @@
   <SPTT_DisplayLocation_desc>Choose where the Session Play Time Tracker should appear in. Settings are effective immediately.\n\nNote: The tracker will not appear if you choose "Real time clock" but did not activate "Show real time clock" in the settings.</SPTT_DisplayLocation_desc>
   <SPTT_UseColorGradient_title>SPTT display use color gradient</SPTT_UseColorGradient_title>
   <SPTT_UseColorGradient_desc>Indicate whether you wish to see a colored background for the SPTT Alert. Settings are effective immediately.\n\nNote: the colored background changes color with respect to time to indicate time passage. Not applicable when SPTT timer is displayed in the "Real time clock" location.</SPTT_UseColorGradient_desc>
+  <SPTT_UseMillisecondPart_title>SPTT display shows millisecond part</SPTT_UseMillisecondPart_title>
+  <SPTT_UseMillisecondPart_desc>Indicate whether the SPTT Alert should show its millisecond part. Settings are effective immediately.</SPTT_UseMillisecondPart_desc>
 </LanguageData>
