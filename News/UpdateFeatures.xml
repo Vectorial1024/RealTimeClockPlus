@@ -37,6 +37,12 @@
 		<assemblyVersion>4.0.2</assemblyVersion>
 		<content>Added option to hide the millisecond part of the Session Play Time Tracker (SPTT).</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">
+		<defName>RTCP_v4_0_3</defName>
+		<assemblyVersion>4.0.3</assemblyVersion>
+		<content>Declares that this mod is compatible with RW v1.2.|As a rule of thumb, it is unlikely that this mod will become incompatible with any future RW releases, but do let me know otherwise.</content>
+	</HugsLib.UpdateFeatureDef>
 	
     <!--
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">

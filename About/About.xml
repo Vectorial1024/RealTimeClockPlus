@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<packageId>V1024.RealTimeClockPlus</packageId>
-	<name>Real Time Clock Plus (v4.0.2)</name>
+	<name>Real Time Clock Plus (v4.0.3)</name>
 	<author>Vectorial1024</author>
 	<supportedVersions>
+		<li>1.2</li>
 		<li>1.1</li>
 		<li>1.0</li>
 		<li>0.19</li>
