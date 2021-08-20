@@ -9,4 +9,6 @@
   <SPTT_UseColorGradient_desc>Indicate whether you wish to see a colored background for the SPTT Alert. Settings are effective immediately.\n\nNote: the colored background changes color with respect to time to indicate time passage. Not applicable when SPTT timer is displayed in the "Real time clock" location.</SPTT_UseColorGradient_desc>
   <SPTT_UseMillisecondPart_title>SPTT display shows millisecond part</SPTT_UseMillisecondPart_title>
   <SPTT_UseMillisecondPart_desc>Indicate whether the SPTT Alert should show its millisecond part. Settings are effective immediately.</SPTT_UseMillisecondPart_desc>
+  <SPTT_BeMinimalist_title>SPTT minimalism</SPTT_BeMinimalist_title>
+  <SPTT_BeMinimalist_desc>Timer. Time. Is OK. No more. Now.</SPTT_BeMinimalist_desc>
 </LanguageData>

@@ -43,7 +43,13 @@
 		<assemblyVersion>4.0.3</assemblyVersion>
 		<content>Declares that this mod is compatible with RW v1.2.|As a rule of thumb, it is unlikely that this mod will become incompatible with any future RW releases, but do let me know otherwise.</content>
 	</HugsLib.UpdateFeatureDef>
-	
+
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">
+		<defName>RTCP_v4_0_4</defName>
+		<assemblyVersion>4.0.4</assemblyVersion>
+		<content>Added option to simplify the Session Play Time Tracker (SPTT) alert label text. Fixed bug with trailing colon (":") when milliseconds are turned off.</content>
+	</HugsLib.UpdateFeatureDef>
+
     <!--
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">
 		<defName>Desync_1_2_0</defName>

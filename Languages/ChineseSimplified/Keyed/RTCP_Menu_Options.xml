@@ -9,4 +9,6 @@
   <SPTT_UseColorGradient_desc>表明「时域游戏时数计时器」应否使用渐变背景颜色。即时生效。\n\n备注：本计时器的渐变背景颜色随时间而变化，以标示时间流逝。不适用于「实时时钟」显示模式。</SPTT_UseColorGradient_desc>
   <SPTT_UseMillisecondPart_title>SPTT显示毫秒部分</SPTT_UseMillisecondPart_title>
   <SPTT_UseMillisecondPart_desc>表明「時域遊戲時數計時器」應否顯示其毫秒部分。即時生效。</SPTT_UseMillisecondPart_desc>
+  <SPTT_BeMinimalist_title>SPTT 极简主义</SPTT_BeMinimalist_title>
+  <SPTT_BeMinimalist_desc>计时器，计时，即可，无他。即时。</SPTT_BeMinimalist_desc>
 </LanguageData>

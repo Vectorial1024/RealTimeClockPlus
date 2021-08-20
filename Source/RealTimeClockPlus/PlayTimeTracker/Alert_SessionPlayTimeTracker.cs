@@ -27,6 +27,10 @@ namespace RealTimeClockPlus.PlayTimeTracker
 
         public override string GetLabel()
         {
+            if (RealTimeClockPlusMain.TimerShouldAppearMinimalist)
+            {
+                return RealTimeClockPlusMain.SessionPlayTimeTracker.ToString();
+            }
             return "SPT T+ " + RealTimeClockPlusMain.SessionPlayTimeTracker.ToString();
         }
 

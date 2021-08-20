@@ -70,11 +70,11 @@ namespace RealTimeClockPlus.PlayTimeTracker
                 }
                 builder.Append(seconds.ToStringCached());
             }
-            builder.Append(":");
             // Milliseconds
             // Policy is to display 2 d.p. of milliseconds
-            if (RealTimeClockPlusMain.SettingHandle_TimerUsesMillisecondPart)
+            if (RealTimeClockPlusMain.TimerShouldIncludeMilliseconds)
             {
+                builder.Append(":");
                 int millisecondsTenths = ElapsedTime.Milliseconds / 10;
                 if (millisecondsTenths < 10)
                 {
