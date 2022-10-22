@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Excluded>
+    <exclude>.git</exclude>
+    <exclude>About\Manifest.xml</exclude>
+    <exclude>About\SPTT_preview.png</exclude>
+    <exclude>README.md</exclude>
+    <exclude>Source</exclude>
+    <exclude>Staging Grounds</exclude>
+    <exclude>TODO.txt</exclude>
+  </Excluded>
+</Configuration>
