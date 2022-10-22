@@ -49,6 +49,12 @@
 		<assemblyVersion>4.0.4</assemblyVersion>
 		<content>Added option to simplify the Session Play Time Tracker (SPTT) alert label text. Fixed bug with trailing colon (":") when milliseconds are turned off.</content>
 	</HugsLib.UpdateFeatureDef>
+	
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">
+		<defName>RTCP_v4_0_5</defName>
+		<assemblyVersion>4.0.5</assemblyVersion>
+		<content>Updated to RW v1.4. Features are unchanged.</content>
+	</HugsLib.UpdateFeatureDef>
 
     <!--
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">
