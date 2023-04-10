@@ -62,6 +62,12 @@
 		<content>Removed $HugsLibChecker because it is obsolete and causing problems.</content>
 	</HugsLib.UpdateFeatureDef>
 
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">
+		<defName>RTCP_v4_0_5_2</defName>
+		<assemblyVersion>4.0.5.2</assemblyVersion>
+		<content>Session play time will now correctly accumulate when running the game in background.</content>
+	</HugsLib.UpdateFeatureDef>
+
     <!--
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">
 		<defName>Desync_1_2_0</defName>

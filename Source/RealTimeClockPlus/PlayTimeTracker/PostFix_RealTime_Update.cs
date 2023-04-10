@@ -17,7 +17,7 @@ namespace RealTimeClockPlus.PlayTimeTracker
         [HarmonyPostfix]
         public static void PostFix()
         {
-            if (!Application.isFocused)
+            if (!Application.isFocused && !Prefs.RunInBackground)
             {
                 // If run-in-background is inactive, and the player switches away,
                 // This will only be executed once only.
