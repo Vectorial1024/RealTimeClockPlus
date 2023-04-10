@@ -12,7 +12,7 @@
 		<li>0.19</li>
 		<li>0.18</li>
 	</supportedVersions>
-	<description>Additional display options for your real-time clock.</description>
+	<description>Additional display options for your real-time clock. Also includes information about your session play time.</description>
 	<url>https://github.com/Vectorial1024/RealTimeClockPlus</url>
 	<modDependencies> 
 		<li>
