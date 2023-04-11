@@ -17,6 +17,11 @@ namespace RealTimeClockPlus.PlayTimeTracker
         [HarmonyPostfix]
         public static void PostFix()
         {
+            if (Current.Game == null)
+            {
+                // not in the play map (eg, in the main menu); irrelevant!
+                return;
+            }
             if (!Application.isFocused && !Prefs.RunInBackground)
             {
                 // If run-in-background is inactive, and the player switches away,

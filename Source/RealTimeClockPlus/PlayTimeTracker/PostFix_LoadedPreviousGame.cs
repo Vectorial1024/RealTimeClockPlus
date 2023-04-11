@@ -1,20 +1,6 @@
-﻿using HarmonyLib;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Verse;
-
-namespace RealTimeClockPlus.PlayTimeTracker
+﻿namespace RealTimeClockPlus.PlayTimeTracker
 {
-    [HarmonyPatch(typeof(GameComponentUtility))]
-    [HarmonyPatch("LoadedGame", MethodType.Normal)]
-    public class PostFix_LoadedPreviousGame
-    {
-        [HarmonyPostfix]
-        public static void PostFix()
-        {
-            RealTimeClockPlusMain.BeginOrResetTimer();
-        }
-    }
+    /*
+     * Note: due to bug fix related to tracker idempotence in zetrith multiplayer environments, this patch file has become empty.
+     */
 }

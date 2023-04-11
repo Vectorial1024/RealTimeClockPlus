@@ -20,6 +20,14 @@ namespace RealTimeClockPlus
 
         private static RimWorldSPTT spttObject;
 
+        /// <summary>
+        /// The session play time tracker.
+        /// 
+        /// It is possible to use this idempotently in eg Zetrith's Multiplayer:
+        /// - This property will auto-create a static tracker if prior instances do not exist
+        /// - You call the idempotent-reset function to reset the timer when the game quits to main menu (the other exit path "Quit to OS" is obviously irrelevant)
+        /// - You do not call AccumulateTime when the game is not in active state.
+        /// </summary>
         public static RimWorldSPTT SessionPlayTimeTracker 
         {
             get
@@ -77,6 +85,22 @@ namespace RealTimeClockPlus
         {
             SessionPlayTimeTracker = new RimWorldSPTT();
         }
+
+        public static void IdempotentBeginTimer()
+        {
+            // the main idea is to avoid resetting it when it is already counting, eg when in multiplayer and a new player joins.
+            Log.Error("Idempotent begin timer");
+            if (SessionPlayTimeTracker != null)
+            {
+                Log.Error("Idempotent begin timer: inner logic");
+                SessionPlayTimeTracker = new RimWorldSPTT();
+            }
+        }
+
+        public static void IdempotentResetTimer()
+        {
+            SessionPlayTimeTracker = null;
+        }
         
         /// <summary>
         /// Initializes and loads mod setting handles as prepared by HugsLib
@@ -90,6 +114,10 @@ namespace RealTimeClockPlus
             SettingHandle_TimerAppearsMinimalist = Settings.GetHandle("flagTimerBeMinimalist", "SPTT_BeMinimalist_title".Translate(), "SPTT_BeMinimalist_desc".Translate(), false);
         }
 
+        /// <summary>
+        /// Warning: DO NOT CALL THIS IF NOT IN PLAY MAP!!!
+        /// </summary>
+        /// <param name="amount"></param>
         public static void AccumulateTime(float amount)
         {
             SessionPlayTimeTracker?.AccumulateTime(amount);
