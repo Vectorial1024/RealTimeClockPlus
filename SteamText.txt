@@ -8,6 +8,7 @@ Package ID: V1024.RealTimeClockPlus
 [*]Requires HugsLib (warning should be given if you don't have HugsLib); place this mod below HugsLib
 [*]Save-file independence: completely safe to add to or remove from existing savegames
 [*]Mod-file independence: does not interact with other mods in any way whatsoever
+[*]Multiplayer: YES
 [*]GitHub repo is here: https://github.com/Vectorial1024/RealTimeClockPlus
 [*]Mod is not packaged for non-Steam download (yet)
 [*]內有简中/繁中翻譯
