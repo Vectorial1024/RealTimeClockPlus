@@ -1,0 +1,53 @@
+Additional time-keeping controls.
+更多顯示時間的選項。
+
+Package ID: V1024.RealTimeClockPlus
+
+[h1]Quick Info and Compatibility[/h1]
+[list]
+[*]Requires HugsLib (warning should be given if you don't have HugsLib); place this mod below HugsLib
+[*]Save-file independence: completely safe to add to or remove from existing savegames
+[*]Mod-file independence: does not interact with other mods in any way whatsoever
+[*]GitHub repo is here: https://github.com/Vectorial1024/RealTimeClockPlus
+[*]Mod is not packaged for non-Steam download (yet)
+[*]內有简中/繁中翻譯
+[/list]
+[h1]Mod Description[/h1]
+This mod is made in response to a feature request on the Reddit suggestion thread.
+
+As of v2.0.0, this mod is now made of two modules:
+[list]
+[*]Real Time Clock Readout: Display formats for your real-time clock
+[*]Session Play Time Tracker: In-game play-time tracker
+[/list]
+Further information on each module can be found in the Mod Options menu.
+
+As of v3.0.0, the Play Time Tracker only counts time that RimWorld is focused, meaning that when the game is minimized or the computer is put to sleep, the Tracker is paused.
+
+As of v4.0.0, this mod was made compatible with the v1.1 new Harmony library.
+
+[h1]Real Time Clock Readout[/h1]
+You may change the display format of your real-time clock. Currently, these formats are offered:
+[list]
+[*]HH:MM (24-hours) (game default)
+[*]HH:MM (12-hours)
+[*]HH:MM:SS (24-hours)
+[*]HH:MM:SS (12-hours)
+[/list]
+[h1]Session Play Time Tracker[/h1]
+Inherited from the now-discontinued mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1655335839]Play Time Tracker[/url], you may now see a timer that shows how many time you have spent in your current RimWorld session. It has a color gradient (gradient can be disabled), configured as follows:
+[list]
+[*]Green (at 0%, 0 hours)
+[*]Yellow (at 40%, 2 hours)
+[*]Red (at 70%, 3.5 hours)
+[*]Black (at 100%+, 5 hours+)
+[/list]
+[h1]Known Issues[/h1]
+[list]
+[*]The Session Play Time Tracker alert is not exactly accurate, in the sense that sometimes, you notice it takes more than 1 seconds to change the value to another second; this is a limitation of RimWorld, where contents inside unfocused alerts are updated less frequently.
+[/list]
+[h1]Join Our Cause! 出一分力吧！[/h1]
+I am not sure what kinds of time formats this community wants, so I am welcoming fellow players to suggest additional clock formats for me to put into this mod as one of the available options.
+我們十分歡迎各位建議更多的時鐘顯示方式。留個言吧！
+[h1]Credits 嗚謝[/h1]
+Thanks to u/Generalkrunk on Reddit for suggesting this idea.
