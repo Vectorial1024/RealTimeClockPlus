@@ -71,10 +71,9 @@
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">
 		<defName>RTCP_v4_0_5_3</defName>
 		<assemblyVersion>4.0.5.3</assemblyVersion>
-		<content>Bugfix for Multiplayer:|
-- (Host:) Session play time will no longer reset when the multiplayer status is changed (e.g., starting a new multiplayer session)
-- (Patron:) No change of behavior
-- (Non-Multiplayer): No change of behavior</content>
+		<content>This mod is now compatible with multiplayer.|Bugfix for multiplayer:|
+- Session play time will no longer reset when the multiplayer status is changed
+- This includes starting a new multiplayer session and converting a multiplayer world back to singleplayer</content>
 	</HugsLib.UpdateFeatureDef>
 
     <!--
