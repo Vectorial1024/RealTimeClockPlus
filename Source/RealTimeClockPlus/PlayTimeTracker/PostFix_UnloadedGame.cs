@@ -16,8 +16,8 @@ namespace RealTimeClockPlus.PlayTimeTracker
         public static void PostFix()
         {
             // peek the stack trace...
-            StackTrace trace = new StackTrace();
-            Log.Error(trace.ToStringSafe());
+            // StackTrace trace = new StackTrace();
+            // Log.Error(trace.ToStringSafe());
             RealTimeClockPlusMain.IdempotentResetTimer();
         }
     }
