@@ -1,13 +1,12 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System;
 using UnityEngine;
 using Verse;
 
 namespace RealTimeClockPlus.RealTimeReadout
 {
     [HarmonyPatch(typeof(GlobalControlsUtility))]
-    [HarmonyPatch("DoRealtimeClock", MethodType.Normal)]
+    [HarmonyPatch(nameof(GlobalControlsUtility.DoRealtimeClock), MethodType.Normal)]
     public class PreFix_DoRealTimeClock
     {
         [HarmonyPriority(Priority.Normal)]

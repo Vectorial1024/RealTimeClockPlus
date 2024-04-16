@@ -1,15 +1,11 @@
 ﻿using HarmonyLib;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using UnityEngine;
 using Verse;
 
 namespace RealTimeClockPlus.PlayTimeTracker
 {
     [HarmonyPatch(typeof(RealTime))]
-    [HarmonyPatch("Update", MethodType.Normal)]
+    [HarmonyPatch(nameof(RealTime.Update), MethodType.Normal)]
     public class PostFix_RealTime_Update
     {
         private static bool ignoreNext = false;

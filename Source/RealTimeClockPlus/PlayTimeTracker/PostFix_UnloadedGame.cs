@@ -1,15 +1,10 @@
 ﻿using HarmonyLib;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using Verse;
 
 namespace RealTimeClockPlus.PlayTimeTracker
 {
     [HarmonyPatch(typeof(GenScene))]
-    [HarmonyPatch("GoToMainMenu", MethodType.Normal)]
+    [HarmonyPatch(nameof(GenScene.GoToMainMenu), MethodType.Normal)]
     public class PostFix_UnloadedGame
     {
         [HarmonyPostfix]
