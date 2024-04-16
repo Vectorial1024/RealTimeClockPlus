@@ -85,7 +85,7 @@
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">
 		<defName>RTCP_v4_0_5_5</defName>
 		<assemblyVersion>4.0.5.5</assemblyVersion>
-		<content>Cleaning up the code base and rebuild for RimWorld 1.5; mod version is now provided through the About.xml file.</content>
+		<content>Cleaned up the code base and rebuilt the mod for RimWorld 1.5; mod version is now provided through the About.xml file.</content>
 	</HugsLib.UpdateFeatureDef>
 
     <!--
