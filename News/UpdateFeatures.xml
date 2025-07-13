@@ -88,11 +88,18 @@
 		<content>Cleaned up the code base and rebuilt the mod for RimWorld 1.5; mod version is now provided through the About.xml file.</content>
 	</HugsLib.UpdateFeatureDef>
 
-    <!--
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_V1024_RealTimeClockPlus">
-		<defName>Desync_1_2_0</defName>
-		<assemblyVersion>1.2.0</assemblyVersion>
-		<content>First paragraph.|img:Things/Item/Meal/Fine,Things/Item/Meal/Lavish,Things/Item/Meal/Simple|caption:This is a caption.|Another paragraph with &lt;b&gt;rich text&lt;/b&gt;.</content>
+		<defName>RTCP_v5_0_0</defName>
+		<assemblyVersion>5.0.0</assemblyVersion>
+		<content>This is the 7th year of the journey of this mod. (Are you still here?)
+
+!!! IMPORTANT !!!
+
+This mod now no longer depends on HugsLib, which means the following:
+- You must manually reapply your previous settings; and
+- This method of displaying update news is discontinued
+
+I- I'm not parasocial or anything; it's just responisible to tell you about this. Baka! &gt;.&lt;
+</content>
 	</HugsLib.UpdateFeatureDef>
-    -->
 </Defs>
