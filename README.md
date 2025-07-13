@@ -9,3 +9,6 @@ Additional display options for your real-time clock.
   - Counts screentime only; run-in-background time will not be counted
 
 Obtain a copy of this mod by cloning to desktop, unzip the file, and placing the folder to the /Mods directory of the game.
+
+## Change log
+Please see `CHANGELOG.md`.
