@@ -10,4 +10,6 @@ As such, there are several files in this repo that contains change logs:
 - For changes made since 2025, see this file and read on
 
 ## Dev (WIP)
+- Mod options is remade with vanilla components instead of HugsLib components
+  - This does mean previous settings are lost, but it should be easy to set them up again
 - Removed `Manifest.xml` for Fluffy's Mod Manager support since mod dependencies can already be handled with vanilla `About.xml`
