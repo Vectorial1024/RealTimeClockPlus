@@ -5,7 +5,7 @@ Package ID: V1024.RealTimeClockPlus
 
 [h1]Quick Info and Compatibility[/h1]
 [list]
-[*]Requires HugsLib (warning should be given if you don't have HugsLib); place this mod below HugsLib
+[*]Requires Harmony; place this mod below Harmony
 [*]Save-file independence: completely safe to add to or remove from existing savegames
 [*]Mod-file independence: does not interact with other mods in any way whatsoever
 [*]Multiplayer: YES
@@ -26,6 +26,8 @@ Further information on each module can be found in the Mod Options menu.
 As of v3.0.0, the Play Time Tracker only counts time that RimWorld is focused, meaning that when the game is minimized or the computer is put to sleep, the Tracker is paused.
 
 As of v4.0.0, this mod was made compatible with the v1.1 new Harmony library.
+
+As of v5.0.0, this mod no longer depends on HugsLib, but depends on Harmony instead.
 
 [h1]Real Time Clock Readout[/h1]
 You may change the display format of your real-time clock. Currently, these formats are offered:
@@ -50,5 +52,6 @@ Inherited from the now-discontinued mod [url=https://steamcommunity.com/sharedfi
 [h1]Join Our Cause! 出一分力吧！[/h1]
 I am not sure what kinds of time formats this community wants, so I am welcoming fellow players to suggest additional clock formats for me to put into this mod as one of the available options.
 我們十分歡迎各位建議更多的時鐘顯示方式。留個言吧！
+
 [h1]Credits 嗚謝[/h1]
 Thanks to u/Generalkrunk on Reddit for suggesting this idea.
