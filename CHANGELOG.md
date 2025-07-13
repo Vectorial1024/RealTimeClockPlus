@@ -10,6 +10,8 @@ As such, there are several files in this repo that contains change logs:
 - For changes made since 2025, see this file and read on
 
 ## Dev (WIP)
+
+## 5.0.0 (2025-07-13)
 As stated above, we are disusing HugsLib and striking it out on our own. This update technically counts as a backwards-breaking update, but the actual impact should be minimal.
 - Removed dependency on HugsLib
   - Now depends on Harmony instead, but Harmony is already a transitive dependency
