@@ -14,7 +14,7 @@
 		<li>0.19</li>
 		<li>0.18</li>
 	</supportedVersions>
-	<modVersion IgnoreIfNoMatchingField="True">5.0.0.0</modVersion>
+	<modVersion IgnoreIfNoMatchingField="True">5.0.0</modVersion>
 	<description>Additional display options for your real-time clock. Also includes information about your session play time.</description>
 	<url>https://github.com/Vectorial1024/RealTimeClockPlus</url>
 	<modDependencies>
