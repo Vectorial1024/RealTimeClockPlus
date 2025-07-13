@@ -10,3 +10,4 @@ As such, there are several files in this repo that contains change logs:
 - For changes made since 2025, see this file and read on
 
 ## Dev (WIP)
+- Removed `Manifest.xml` for Fluffy's Mod Manager support since mod dependencies can already be handled with vanilla `About.xml`
