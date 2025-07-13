@@ -14,8 +14,5 @@
     <PackageReference Include="Lib.Harmony" Version="2.3.3">
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
-    <PackageReference Include="UnlimitedHugs.Rimworld.HugsLib" Version="11.0.3">
-      <ExcludeAssets>runtime</ExcludeAssets>
-    </PackageReference>
   </ItemGroup>
 </Project>

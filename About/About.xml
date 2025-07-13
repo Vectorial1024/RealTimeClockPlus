@@ -14,18 +14,87 @@
 		<li>0.19</li>
 		<li>0.18</li>
 	</supportedVersions>
-	<modVersion IgnoreIfNoMatchingField="True">4.0.5.5</modVersion>
+	<modVersion IgnoreIfNoMatchingField="True">5.0.0.0</modVersion>
 	<description>Additional display options for your real-time clock. Also includes information about your session play time.</description>
 	<url>https://github.com/Vectorial1024/RealTimeClockPlus</url>
-	<modDependencies> 
+	<modDependencies>
 		<li>
-			<packageId>UnlimitedHugs.HugsLib</packageId>
-			<displayName>HugsLib</displayName>
-			<downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib/releases/latest</downloadUrl>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 		</li>
 	</modDependencies>
+	<modDependenciesByVersion>
+		<v1.0>
+			<li>
+				<packageId>UnlimitedHugs.HugsLib</packageId>
+				<displayName>HugsLib</displayName>
+				<downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib/releases/latest</downloadUrl>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+			</li>
+		</v1.0>
+		<v1.1>
+			<li>
+				<packageId>UnlimitedHugs.HugsLib</packageId>
+				<displayName>HugsLib</displayName>
+				<downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib/releases/latest</downloadUrl>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+			</li>
+		</v1.1>
+		<v1.2>
+			<li>
+				<packageId>UnlimitedHugs.HugsLib</packageId>
+				<displayName>HugsLib</displayName>
+				<downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib/releases/latest</downloadUrl>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+			</li>
+		</v1.2>
+		<v1.3>
+			<li>
+				<packageId>UnlimitedHugs.HugsLib</packageId>
+				<displayName>HugsLib</displayName>
+				<downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib/releases/latest</downloadUrl>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+			</li>
+		</v1.3>
+		<v1.4>
+			<li>
+				<packageId>UnlimitedHugs.HugsLib</packageId>
+				<displayName>HugsLib</displayName>
+				<downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib/releases/latest</downloadUrl>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+			</li>
+		</v1.4>
+		<v1.5>
+			<li>
+				<packageId>UnlimitedHugs.HugsLib</packageId>
+				<displayName>HugsLib</displayName>
+				<downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib/releases/latest</downloadUrl>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+			</li>
+		</v1.5>
+	</modDependenciesByVersion>
 	<loadAfter>
-		<li>UnlimitedHugs.HugsLib</li>
+		<li>brrainz.harmony</li>
 	</loadAfter>
+	<loadAfterByVersion>
+		<v1.0>
+			<li>UnlimitedHugs.HugsLib</li>
+		</v1.0>
+		<v1.1>
+			<li>UnlimitedHugs.HugsLib</li>
+		</v1.1>
+		<v1.2>
+			<li>UnlimitedHugs.HugsLib</li>
+		</v1.2>
+		<v1.3>
+			<li>UnlimitedHugs.HugsLib</li>
+		</v1.3>
+		<v1.4>
+			<li>UnlimitedHugs.HugsLib</li>
+		</v1.4>
+		<v1.5>
+			<li>UnlimitedHugs.HugsLib</li>
+		</v1.5>
+	</loadAfterByVersion>
 </ModMetaData>

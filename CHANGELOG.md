@@ -10,6 +10,10 @@ As such, there are several files in this repo that contains change logs:
 - For changes made since 2025, see this file and read on
 
 ## Dev (WIP)
-- Mod options is remade with vanilla components instead of HugsLib components
+As stated above, we are disusing HugsLib and striking it out on our own. This update technically counts as a backwards-breaking update, but the actual impact should be minimal.
+- Removed dependency on HugsLib
+  - Now depends on Harmony instead, but Harmony is already a transitive dependency
+  - Mod options is remade with vanilla components instead of HugsLib components
   - This does mean previous settings are lost, but it should be easy to set them up again
+  - Mod updates are no longer shown via HugsLib; you should look up the changelog files if you are interested
 - Removed `Manifest.xml` for Fluffy's Mod Manager support since mod dependencies can already be handled with vanilla `About.xml`
