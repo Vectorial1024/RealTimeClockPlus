@@ -40,33 +40,19 @@ namespace RealTimeClockPlus.PlayTimeTracker
             builder.Append(":");
             // Minutes
             int minutes = ElapsedTime.Minutes;
-            if (minutes == 0)
+            if (minutes < 10)
             {
-                builder.Append("00");
+                builder.Append("0");
             }
-            else
-            {
-                if (minutes < 10)
-                {
-                    builder.Append("0");
-                }
-                builder.Append(minutes.ToStringCached());
-            }
+            builder.Append(minutes.ToStringCached());
             builder.Append(":");
             // Seconds
             int seconds = ElapsedTime.Seconds;
-            if (seconds == 0)
+            if (seconds < 10)
             {
-                builder.Append("00");
+                builder.Append("0");
             }
-            else
-            {
-                if (seconds < 10)
-                {
-                    builder.Append("0");
-                }
-                builder.Append(seconds.ToStringCached());
-            }
+            builder.Append(seconds.ToStringCached());
             // Milliseconds
             // Policy is to display 2 d.p. of milliseconds
             if (RealTimeClockPlusMod.Settings.spttTrackMilliseconds)
