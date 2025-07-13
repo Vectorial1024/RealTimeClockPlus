@@ -89,10 +89,8 @@ namespace RealTimeClockPlus
         public static void IdempotentBeginTimer()
         {
             // the main idea is to avoid resetting it when it is already counting, eg when in multiplayer and a new player joins.
-            Log.Error("Idempotent begin timer");
             if (SessionPlayTimeTracker != null)
             {
-                Log.Error("Idempotent begin timer: inner logic");
                 SessionPlayTimeTracker = new RimWorldSPTT();
             }
         }
