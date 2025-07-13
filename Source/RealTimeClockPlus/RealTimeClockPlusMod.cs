@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using RealTimeClockPlus.PlayTimeTracker;
+using UnityEngine;
 using Verse;
 
 namespace RealTimeClockPlus
@@ -11,6 +12,8 @@ namespace RealTimeClockPlus
         // Static objects
 
         private static RimWorldSPTT spttObject;
+
+        public static ClockSettings Settings { get; private set; }
 
         /// <summary>
         /// The session play time tracker.
@@ -42,6 +45,9 @@ namespace RealTimeClockPlus
             LogInfo("Real Time Clock Plus, starting up. Hopefully the patches work.");
             Harmony harmony = new Harmony("rimworld." + content.PackageId);
             harmony.PatchAll();
+
+            // we also need to read the mod settings outselves
+            Settings = GetSettings<ClockSettings>();
         }
 
         /// <summary>
@@ -87,6 +93,16 @@ namespace RealTimeClockPlus
         public static void AccumulateTime(float amount)
         {
             SessionPlayTimeTracker?.AccumulateTime(amount);
+        }
+
+        public override string SettingsCategory()
+        {
+            return "Real Time Clock Plus";
+        }
+
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+            Settings.DoSettingsWindowContents(inRect);
         }
     }
 }
