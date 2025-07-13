@@ -27,7 +27,7 @@ namespace RealTimeClockPlus.RealTimeReadout
             if (RealTimeClockPlusMain.TimerIsDisplayedAtClock)
             {
                 result += " (SPT ";
-                result += RealTimeClockPlusMain.SessionPlayTimeTracker.ToString();
+                result += RealTimeClockPlusMod.SessionPlayTimeTracker.ToString();
                 result += ")";
             }
             // Log.Error("Result is: " + result);

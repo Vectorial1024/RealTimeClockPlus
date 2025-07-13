@@ -31,7 +31,7 @@ namespace RealTimeClockPlus.PlayTimeTracker
                 ignoreNext = false;
                 return;
             }
-            RealTimeClockPlusMain.AccumulateTime(RealTime.realDeltaTime);
+            RealTimeClockPlusMod.AccumulateTime(RealTime.realDeltaTime);
         }
     }
 }

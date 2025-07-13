@@ -26,9 +26,9 @@ namespace RealTimeClockPlus.PlayTimeTracker
         {
             if (RealTimeClockPlusMain.TimerShouldAppearMinimalist)
             {
-                return RealTimeClockPlusMain.SessionPlayTimeTracker.ToString();
+                return RealTimeClockPlusMod.SessionPlayTimeTracker.ToString();
             }
-            return "SPT T+ " + RealTimeClockPlusMain.SessionPlayTimeTracker.ToString();
+            return "SPT T+ " + RealTimeClockPlusMod.SessionPlayTimeTracker.ToString();
         }
 
         public override TaggedString GetExplanation()
@@ -60,7 +60,7 @@ namespace RealTimeClockPlus.PlayTimeTracker
         {
             get
             {
-                TimeSpan elapsedTime = RealTimeClockPlusMain.SessionPlayTimeTracker.ElapsedTime;
+                TimeSpan elapsedTime = RealTimeClockPlusMod.SessionPlayTimeTracker.ElapsedTime;
                 float progression = Mathf.Clamp((float)(elapsedTime.TotalMilliseconds / maxTimeForGradient.TotalMilliseconds), 0, 1);
                 float localProgression;
                 // Different progression results in different gradience

@@ -13,7 +13,7 @@ namespace RealTimeClockPlus.PlayTimeTracker
             // peek the stack trace...
             // StackTrace trace = new StackTrace();
             // Log.Error(trace.ToStringSafe());
-            RealTimeClockPlusMain.IdempotentResetTimer();
+            RealTimeClockPlusMod.IdempotentResetTimer();
         }
     }
 }

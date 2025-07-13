@@ -8,6 +8,7 @@ using Verse;
 
 namespace RealTimeClockPlus
 {
+    [Obsolete]
     public class RealTimeClockPlusMain : ModBase
     {
         // Configs and stuff
@@ -68,8 +69,6 @@ namespace RealTimeClockPlus
 
         public static bool TimerShouldAppearMinimalist => SettingHandle_TimerAppearsMinimalist.Value;
 
-        public static bool PlayTimeTrackerIsLoaded { get; internal set; } = false;
-
         // Constructor not needed
 
         // Base or extension methods
@@ -79,27 +78,6 @@ namespace RealTimeClockPlus
             PrepareModSettingHandles();
         }
 
-        // User-defined methods
-
-        public static void BeginOrResetTimer()
-        {
-            SessionPlayTimeTracker = new RimWorldSPTT();
-        }
-
-        public static void IdempotentBeginTimer()
-        {
-            // the main idea is to avoid resetting it when it is already counting, eg when in multiplayer and a new player joins.
-            if (SessionPlayTimeTracker != null)
-            {
-                SessionPlayTimeTracker = new RimWorldSPTT();
-            }
-        }
-
-        public static void IdempotentResetTimer()
-        {
-            SessionPlayTimeTracker = null;
-        }
-        
         /// <summary>
         /// Initializes and loads mod setting handles as prepared by HugsLib
         /// </summary>
@@ -110,15 +88,6 @@ namespace RealTimeClockPlus
             SettingHandle_TimerUseColorGradient = Settings.GetHandle("flagTimerUseColorGradient", "SPTT_UseColorGradient_title".Translate(), "SPTT_UseColorGradient_desc".Translate(), true);
             SettingHandle_TimerUsesMillisecondPart = Settings.GetHandle("flagTimerUseMilliseconds", "SPTT_UseMillisecondPart_title".Translate(), "SPTT_UseMillisecondPart_desc".Translate(), true);
             SettingHandle_TimerAppearsMinimalist = Settings.GetHandle("flagTimerBeMinimalist", "SPTT_BeMinimalist_title".Translate(), "SPTT_BeMinimalist_desc".Translate(), false);
-        }
-
-        /// <summary>
-        /// Warning: DO NOT CALL THIS IF NOT IN PLAY MAP!!!
-        /// </summary>
-        /// <param name="amount"></param>
-        public static void AccumulateTime(float amount)
-        {
-            SessionPlayTimeTracker?.AccumulateTime(amount);
         }
     }
 }
