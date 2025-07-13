@@ -7,6 +7,6 @@ In the past, HugsLib was used only to display update news. But, seeing the gradu
 As such, there are several files in this repo that contains change logs:
 - For changes made in 2019, see `Defs/UpdateFeatureDefs/UpdateFeatures.xml` and check for file edit history
 - For changes made between 2020 and 2024, see `News/UpdateFeatures.xml` and check for file edit history
-- For changes made since 2025, see `CHANGELOG.md`
+- For changes made since 2025, see this file and read on
 
 ## Dev (WIP)
