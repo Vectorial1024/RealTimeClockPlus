@@ -12,8 +12,8 @@ namespace RealTimeClockPlus
 {
     public class ClockSettings : ModSettings
     {
-        // to make the listing more clickable
         public const int StandardRowHeight = 30;
+        public const int StandardColumnPadding = 10;
 
         public ClockReadoutFormatEnum clockDisplayFormat;
         private TimerDisplayLocationEnum spttDisplayLocation;
@@ -40,22 +40,56 @@ namespace RealTimeClockPlus
             Listing_Standard listing = new Listing_Standard();
 
             // ...
+            listing.verticalSpacing = 8; // make it more clickable/readable
             listing.Begin(inRect);
 
-            // todo use radio buttons instead of the dropdown
+            /*
+             * concept:
+             * left column handles real time clock plus
+             * right column handles session play time tracker
+             */
+            listing.ColumnWidth = listing.ColumnWidth / 2 - StandardColumnPadding;
 
-            // todo display format
+            // left column handles the real time clock
 
-            // todo sptt display location
+            // display format
+            listing.Label("RTCP_DisplayFormatChoice_title".Translate(), tooltip: "RTCP_DisplayFormatChoice_descr".Translate());
+            foreach (var theValue in Enum.GetValues(typeof(ClockReadoutFormatEnum)).Cast<ClockReadoutFormatEnum>())
+            {
+                string label = "ClockReadoutFormat_" + theValue.ToString();
+                if (listing.RadioButton(label.Translate(), clockDisplayFormat == theValue))
+                {
+                    // on click, set value
+                    clockDisplayFormat = theValue;
+                }
+            }
 
-            // todo sptt gradient
-            listing.CheckboxLabeled("SPTT_UseColorGradient_title".Translate(), ref spttUseGradient, "SPTT_UseColorGradient_desc".Translate(), StandardRowHeight);
+            // right column handles session play time tracker
+            listing.NewColumn();
 
-            // todo sptt milliseconds
-            listing.CheckboxLabeled("SPTT_UseMillisecondPart_title".Translate(), ref spttTrackMilliseconds, "SPTT_UseMillisecondPart_desc".Translate(), StandardRowHeight);
+            // sptt display location
+            listing.Label("SPTT_DisplayLocation_title".Translate(), tooltip: "SPTT_DisplayLocation_desc".Translate());
+            foreach (var theValue in Enum.GetValues(typeof(TimerDisplayLocationEnum)).Cast<TimerDisplayLocationEnum>())
+            {
+                string label = "TimerDisplayLocation_" + theValue.ToString();
+                if (listing.RadioButton(label.Translate(), spttDisplayLocation == theValue))
+                {
+                    // on click, set value
+                    spttDisplayLocation = theValue;
+                }
+            }
 
-            // todo sptt minimal
-            listing.CheckboxLabeled("SPTT_BeMinimalist_title".Translate(), ref spttMinimal, "SPTT_BeMinimalist_desc".Translate(), StandardRowHeight);
+            // gap it
+            listing.Gap(StandardRowHeight);
+
+            // sptt gradient
+            listing.CheckboxLabeled("SPTT_UseColorGradient_title".Translate(), ref spttUseGradient, "SPTT_UseColorGradient_desc".Translate());
+
+            // sptt milliseconds
+            listing.CheckboxLabeled("SPTT_UseMillisecondPart_title".Translate(), ref spttTrackMilliseconds, "SPTT_UseMillisecondPart_desc".Translate());
+
+            // sptt minimal
+            listing.CheckboxLabeled("SPTT_BeMinimalist_title".Translate(), ref spttMinimal, "SPTT_BeMinimalist_desc".Translate());
 
             // all done
             listing.End();
