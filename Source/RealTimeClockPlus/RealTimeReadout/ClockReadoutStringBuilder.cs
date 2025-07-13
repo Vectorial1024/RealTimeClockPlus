@@ -6,7 +6,7 @@ namespace RealTimeClockPlus.RealTimeReadout
     {
         public static string GenerateTimeStringNow()
         {
-            ClockReadoutFormatEnum formatEnum = RealTimeClockPlusMain.SettingHandle_ClockDisplayFormat;
+            ClockReadoutFormatEnum formatEnum = RealTimeClockPlusMod.Settings.clockDisplayFormat;
             string format;
 
             switch (formatEnum)

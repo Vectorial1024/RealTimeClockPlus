@@ -69,7 +69,7 @@ namespace RealTimeClockPlus.PlayTimeTracker
             }
             // Milliseconds
             // Policy is to display 2 d.p. of milliseconds
-            if (RealTimeClockPlusMain.TimerShouldIncludeMilliseconds)
+            if (RealTimeClockPlusMod.Settings.spttTrackMilliseconds)
             {
                 builder.Append(":");
                 int millisecondsTenths = ElapsedTime.Milliseconds / 10;

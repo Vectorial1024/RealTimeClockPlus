@@ -24,7 +24,7 @@ namespace RealTimeClockPlus.PlayTimeTracker
 
         public override string GetLabel()
         {
-            if (RealTimeClockPlusMain.TimerShouldAppearMinimalist)
+            if (RealTimeClockPlusMod.Settings.spttMinimal)
             {
                 return RealTimeClockPlusMod.SessionPlayTimeTracker.ToString();
             }
@@ -38,14 +38,14 @@ namespace RealTimeClockPlus.PlayTimeTracker
 
         public override AlertReport GetReport()
         {
-            return RealTimeClockPlusMain.TimerIsDisplayedAsAlert;
+            return RealTimeClockPlusMod.Settings.DisplaySpttAsAlert;
         }
 
         protected override Color BGColor
         {
             get
             {
-                if (RealTimeClockPlusMain.TimerAlertShouldUseColorGradient)
+                if (RealTimeClockPlusMod.Settings.spttUseGradient)
                 {
                     return GradientColor;
                 }

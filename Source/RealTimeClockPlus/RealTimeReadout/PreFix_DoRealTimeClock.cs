@@ -24,7 +24,7 @@ namespace RealTimeClockPlus.RealTimeReadout
         private static string GetClockAreaReadout()
         {
             string result = ClockReadoutStringBuilder.GenerateTimeStringNow();
-            if (RealTimeClockPlusMain.TimerIsDisplayedAtClock)
+            if (RealTimeClockPlusMod.Settings.DisplaySpttAtClock)
             {
                 result += " (SPT ";
                 result += RealTimeClockPlusMod.SessionPlayTimeTracker.ToString();
